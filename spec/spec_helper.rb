@@ -13,7 +13,13 @@
 # it.
 #
 # See https://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
+ENV["RACK_ENV"] = "test"
+require_relative "../app/app"
+
 RSpec.configure do |config|
+ config.before(:each) do
+    ActiveRecord::Base.subclasses.each(&:delete_all)
+  end
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
   # assertions if you prefer.
