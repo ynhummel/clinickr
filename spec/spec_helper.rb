@@ -14,7 +14,7 @@
 #
 # See https://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 ENV["RACK_ENV"] = "test"
-require_relative "../app/app"
+require_relative "../app"
 
 RSpec.configure do |config|
  config.before(:each) do
