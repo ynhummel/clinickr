@@ -7,4 +7,5 @@ gem 'thin'
 gem "sinatra-activerecord"
 gem 'activerecord', '~> 7.0', '>= 7.0.2.3'
 
+gem 'rack-test'
 gem 'rspec'

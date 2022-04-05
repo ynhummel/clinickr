@@ -1,5 +1,5 @@
 require 'spec_helper'
-require './lib/methods/csv_import'
+require_relative '../lib/csv_import'
 
 describe 'Importa dados do arquivo CSV' do
   it 'com sucesso' do

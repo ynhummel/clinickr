@@ -24,6 +24,8 @@ GEM
     rack (2.2.3)
     rack-protection (2.2.0)
       rack
+    rack-test (1.1.0)
+      rack (>= 1.0, < 3)
     rake (13.0.6)
     rspec (3.11.0)
       rspec-core (~> 3.11.0)
@@ -61,6 +63,7 @@ PLATFORMS
 DEPENDENCIES
   activerecord (~> 7.0, >= 7.0.2.3)
   pg
+  rack-test
   rake
   rspec
   sinatra
