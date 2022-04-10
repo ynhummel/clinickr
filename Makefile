@@ -26,6 +26,9 @@ app.build:
 app.up:
 	@ docker start clinickr_app
 
+db.up:
+	@ docker start clinickr_db
+
 app.exec:
 	@docker exec -it clinickr_app bash
 

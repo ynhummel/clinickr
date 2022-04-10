@@ -1,4 +1,4 @@
 require_relative 'csv_import' 
 
-path = "./data/result_tests.csv"
+path = "./data/test_data.csv"
 csv_import(path)
