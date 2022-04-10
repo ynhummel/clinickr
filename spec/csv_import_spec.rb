@@ -9,9 +9,8 @@ describe 'Importa dados do arquivo CSV' do
   context 'e falhou' do
     it 'caminho incorreto' do
       path = "../data/tet_data.csv"
-      db = "clinickr_test"
 
-      expect {csv_import(path: path, dbname: db)}.to output("Erro no caminho do arquivo CSV\n").to_stdout
+      expect {csv_import(path)}.to output("Erro no caminho do arquivo CSV\n").to_stdout
     end
 
   end

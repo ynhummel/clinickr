@@ -1,7 +1,7 @@
 require 'csv'
 require 'pg'
 
-def csv_import(path:, dbname:)
+def csv_import(path)
   begin
 
     csv_data = CSV.read(path, col_sep: ';')[1..]
@@ -14,7 +14,7 @@ def csv_import(path:, dbname:)
 
     begin
 
-      con = PG.connect :host => '172.18.0.2', :dbname => dbname , :user => 'postgres', :password => 'postgres'
+      con = PG.connect host: 'clinickr_db', dbname: 'clinickrdb' , user: 'clinickr', password: 'clinickr'
     
       con.exec "CREATE TABLE IF NOT EXISTS Results(Id SERIAL PRIMARY KEY, cpf VARCHAR, pac_nome VARCHAR,
                                   pac_email VARCHAR, data_nasc DATE, endereco VARCHAR,

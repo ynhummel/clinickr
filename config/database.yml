@@ -1,26 +1,26 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: clinickr
+  database: clinickrdb
   pool: 5
-  username: postgres
-  password: postgres
-  host: 172.18.0.2
+  username: clinickr
+  password: clinickr
+  host: clinickr_db
 
 test:
   adapter: postgresql
   encoding: unicode
   database: clinickr_test
   pool: 5
-  username: postgres
-  password: postgres
-  host: 172.18.0.2
+  username: clinickr
+  password: clinickr
+  host: clinickr_db
 
 production:
   adapter: postgresql
   encoding: unicode
   database: clinickr_prod
   pool: 5
-  username: postgres
-  password: postgres
-  host: 172.18.0.2
+  username: clinickr
+  password: clinickr
+  host: clinickr_db
