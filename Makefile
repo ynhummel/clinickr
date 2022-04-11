@@ -1,5 +1,5 @@
 db.setup:
-  @ docker network create clinickr
+	@ docker network create clinickr
 
 	@	docker run \
 		--name clinickr_db \
