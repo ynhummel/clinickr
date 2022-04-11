@@ -20,6 +20,10 @@ Para configurar o banco de dados rode dentro do ambiente de desenvolvimento:
 # rake db:migrate
 # rake db:tests:prepare
 ```
+Para adicionar dados ao banco
+```
+# rake db:seed
+```
 Para rodar os testes rode dentro do ambiente de desenvolvimento:
 ```
 # rspec

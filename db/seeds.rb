@@ -1,4 +1,4 @@
 require_relative '../lib/csv_import'
 
-path = "./data/test_data.csv"
+path = "./data/result_tests.csv"
 CsvImport.call(path)
