@@ -7,8 +7,8 @@ describe 'Importa dados do arquivo CSV' do
 
   context 'e falhou' do
     it 'caminho incorreto' do
-      path = "../data/tet_data.csv"
-      expect {CsvImport.call(path)}.to output("Erro no caminho do arquivo CSV\n").to_stdout
+      file = "tet_data.csv"
+      expect {CsvImport.call(file)}.to output("Erro no caminho do arquivo CSV\n").to_stdout
     end
   end
 end

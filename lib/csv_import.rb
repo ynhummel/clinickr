@@ -2,8 +2,9 @@ require 'csv'
 require 'pg'
 
 class CsvImport
-  def self.call(path)
+  def self.call(filename)
     begin
+      path = "../data/#{filename}"
       csv_data = CSV.read(path, col_sep: ';')
       csv_data.shift
     rescue Errno::ENOENT
